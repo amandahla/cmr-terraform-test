@@ -6,11 +6,11 @@ variable "juju_model_name" {
 variable "juju_controller_name" {
   description = "Juju controller name"
   type        = string
-  default = ""
+  default     = ""
 }
 
 variable "juju_offer_user" {
   description = "Juju user that will be created for sharing the offer"
   type        = string
-  default = "admin"
+  default     = "admin"
 }

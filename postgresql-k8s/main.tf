@@ -27,6 +27,7 @@ resource "juju_offer" "postgresql" {
 }
 
 resource "juju_access_offer" "postgresql_to_operator" {
-    offer_url = juju_offer.postgresql.url
-    consume   = [var.juju_offer_user]
+  offer_url = juju_offer.postgresql.url
+  consume   = [var.juju_offer_user]
+  admin     = ["des-database"]
 }
